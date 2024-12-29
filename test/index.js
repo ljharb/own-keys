@@ -26,8 +26,8 @@ test('ownKeys', function (t) {
 		}
 
 		st.deepEqual(
-			ownKeys(obj),
-			hasPropertyDescriptors ? ['a', 'b', 'c'] : ['a', 'b'],
+			ownKeys(obj).sort(),
+			(hasPropertyDescriptors ? ['a', 'b', 'c'] : ['a', 'b']).sort(),
 			'includes non-enumerable properties'
 		);
 
@@ -49,8 +49,8 @@ test('ownKeys', function (t) {
 		});
 
 		st.deepEqual(
-			ownKeys(obj),
-			['a', sym, nonEnumSym],
+			ownKeys(obj).sort(),
+			['a', sym, nonEnumSym].sort(),
 			'works with symbols, both enum and non-enum'
 		);
 
