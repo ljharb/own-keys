@@ -1,0 +1,34 @@
+{
+	"name": "own-keys",
+	"version": "0.0.0",
+	"description": "Robustly get an object's own property keys (strings and symbols), including non-enumerables when possible",
+	"main": "index.js",
+	"exports": {
+		".": "./index.js",
+		"./package.json": "./package.json"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ljharb/own-keys.git"
+	},
+	"keywords": [
+		"own",
+		"key",
+		"keys",
+		"propertykey",
+		"string",
+		"symbol",
+		"enumerable",
+		"non-enumerable",
+		"robust"
+	],
+	"author": "Jordan Harband <ljharb@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ljharb/own-keys/issues"
+	},
+	"homepage": "https://github.com/ljharb/own-keys#readme"
+}
