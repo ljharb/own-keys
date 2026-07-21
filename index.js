@@ -10,7 +10,7 @@ var $gOPS = GetIntrinsic('%Object.getOwnPropertySymbols%', true);
 
 var keys = require('object-keys');
 
-/** @type {import('.')} */
+/** @type {typeof import('.')} */
 module.exports = $ownKeys || function ownKeys(source) {
 	/** @type {(keyof typeof source)[]} */
 	var sourceKeys = ($gOPN || keys)(source);
